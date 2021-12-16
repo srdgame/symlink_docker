@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  symlink:
+    image: kooiot/symlink
+    restart: on-failure
+    network_mode: host
+    ports:
+      - "8240:8240/tcp"
+      - "9200:9200/tcp"
+      - "9230:9230/tcp"
+      - "9231:9231/tcp"
+      - "2040:2040/tcp"
+      - "1996:1996/udp"
+      - "2000:2000/udp"
+      - "2005:2005/udp"
+      - "2008:2008/udp"
+    volumes:
+      - symlink-mnt-vol:/mnt:rw
+
+volumes:
+  symlink-mnt-vol:

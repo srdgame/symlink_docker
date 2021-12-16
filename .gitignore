@@ -1,0 +1,17 @@
+*.code-workspace
+
+# Environment Variables
+.env
+
+# Pycharm
+.idea
+
+# VIM
+*~
+*.un~
+*.swp
+
+# VS Code devcontainer
+.devcontainer
+
+files
