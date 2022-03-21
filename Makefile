@@ -2,6 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 MF_DOCKER_IMAGE_NAME_PREFIX ?= kooiot
+PROJECT_NAME ?= symtech
 
 all: docker_symlink
 
