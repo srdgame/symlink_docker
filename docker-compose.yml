@@ -15,6 +15,9 @@ services:
       - "2000:2000/udp"
       - "2005:2005/udp"
       - "2008:2008/udp"
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyS1"
+      - "/dev/ttyUSB1:/dev/ttyS2"
     volumes:
       - symlink-mnt-vol:/mnt:rw
 
